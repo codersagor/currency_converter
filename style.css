@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --common-color: #0fbcf9;
+    --secondary-color: #4bcffa;
+}
+
+body {
+    background: #1e272e;
+    font-family: poppins;
+    color: #fff;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 15px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #1e272e;
+    padding: 5px 20px;
+    flex-wrap: wrap;
+}
+.logo  {
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+ul.main-menu li  {
+    display: inline-block;
+    margin: 0 5px;
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: consolas;
+    margin: 0 5px;
+    text-transform: uppercase;
+    transition: ease 0.5s;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+}
+ul li a:hover {
+    color: var(--common-color);
+}
+.center {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-top: 10vh;
+}
+.card {
+	background: #ffffff;
+	text-align: center;
+	margin: 50px 20px;
+	max-width: 300px;
+	overflow: hidden;
+	width: 300px;
+	border-radius: 5px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.397);
+}
+.card.featured {
+    transform: scale(1.2)
+}
+.card-title {
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 100px;
+    position: relative;
+    z-index: 1111;
+    padding-top: 20px;
+    color: #fff;
+}
+.card-title h5 {
+     text-transform: uppercase;
+}
+
+.card-title::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, -303px) scale(1.5);
+    transform-origin: top;
+    max-width: 100%;
+    width: 300px;
+    height: 276px;
+    border-radius: 150px;
+    content: "";
+    z-index: -1;
+    background: #0fbcf9;
+}
+.card-body {
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+.card-body ul li {
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: rgb(105, 105, 105);
+    
+    font-weight: 500;
+}
+
+.card-btn {
+    background: #0fbcf9;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.selec_option {
+    text-align: center;
+    z-index: 99999999999999999;
+    outline: none;
+}
+.selec_option h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+select#currency {
+    width: 100%;
+    max-width: 200px;
+    font-size: 20px;
+    border: 3px solid #0fbcf9;
+}
